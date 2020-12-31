@@ -1,7 +1,6 @@
 //import the React and ReactDOM Libraries
 import React from 'react';
 import ReactDOM from 'react-dom';
-import faker from 'faker';
 import CommentDetail from './CommentDetail';
 import ApprovalCard from './ApprovalCard';
 
@@ -16,33 +15,31 @@ const App = () => {
         </div>
       </ApprovalCard>
 
+
+
       <ApprovalCard>
         <CommentDetail
           author="Sam"
           timeAgo="Today at 08:00 AM"
           commentData="Super sick post"
-          avatar={faker.image.avatar()}
         />
       </ApprovalCard>
 
       <ApprovalCard>
         <CommentDetail
-          author="Alex"
+          author="Sam"
           timeAgo="Today at 08:00 AM"
-          commentData="Thats dope man!"
-          avatar={faker.image.avatar()}
+          commentData="Super sick post"
         />
       </ApprovalCard>
 
       <ApprovalCard>
         <CommentDetail
-          author="Jane"
+          author="Sam"
           timeAgo="Today at 08:00 AM"
-          commentData="Keep up the good work!"
-          avatar={faker.image.avatar()}
+          commentData="Super sick post"
         />
       </ApprovalCard>
-
     </div>
   )
 };

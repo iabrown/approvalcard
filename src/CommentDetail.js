@@ -1,11 +1,13 @@
 import React from 'react';
+import Avatar from 'react-avatar';
+
 
 
 const CommentDetail = (props) => {
   return (
     <div className="comment">
       <a href="/" className="avatar">
-        <img alt="avatar" src={props.avatar}/>
+        <Avatar  name="Wim Mostmans" />
       </a>
       <div className="content">
         <a href="/" className="author">{props.avatar}</a>
@@ -15,6 +17,7 @@ const CommentDetail = (props) => {
         <div className="text">{props.commentData}</div>
       </div>
     </div>
+
   );
 };
 
